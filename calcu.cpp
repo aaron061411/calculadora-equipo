@@ -1,24 +1,26 @@
-#include <iostream>
+#include<iostream>
+#include <windows.h>
 
 using namespace std;
 
+void calc (){
 
-int resta (int a, int b) {
-    return a - b;
+     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 11);
+    cout << "-----CALCULADORA-----" << endl; 
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
+
+
+
+
+
+
+      SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 11);
+           cout << "-----Gracias por usar la calculadora-----";
+           SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
+
 }
-
-int main() {
-    int a, b;
-    cout << "Introduce el primer número: ";
-    cin >> a;
-    cout << "Introduce el segundo número: ";
-    cin >> b;
-
-    int resultado = resta(a, b);
-    cout << "La resta de " << a << " y " << b << " es: " << resultado << endl;
-
-    return 0;
-
-
-
+int main (){
+   
+    calc();
+     return 0;
 }
